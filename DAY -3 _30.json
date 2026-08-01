@@ -1,0 +1,330 @@
+{
+  "name": "DAY -3 /30",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "AI CUSTOMER SUPPORT TICKET",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Name",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Email",
+              "fieldType": "email",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Subject",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Problem",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {
+          "appendAttribution": false,
+          "customCss": ":root {\n\t/* =========================================\n\t   AI CUSTOMER SUPPORT TICKET\n\t   JZ PVT LTD\n\t   Modern Blue + Cyan Theme\n\t========================================= */\n\n\t/* Typography */\n\t--font-family: 'Open Sans', sans-serif;\n\t--font-weight-normal: 400;\n\t--font-weight-bold: 600;\n\n\t--font-size-body: 13px;\n\t--font-size-label: 13px;\n\t--font-size-test-notice: 12px;\n\t--font-size-input: 14px;\n\t--font-size-header: 26px;\n\t--font-size-paragraph: 14px;\n\t--font-size-link: 13px;\n\t--font-size-error: 12px;\n\n\t--font-size-html-h1: 30px;\n\t--font-size-html-h2: 22px;\n\t--font-size-html-h3: 18px;\n\t--font-size-html-h4: 15px;\n\t--font-size-html-h5: 13px;\n\t--font-size-html-h6: 11px;\n\t--font-size-subheader: 14px;\n\n\n\t/* =========================================\n\t   COLORS\n\t========================================= */\n\n\t--color-background: #f4f8ff;\n\n\t/* AI Brand Colors */\n\t--color-primary: #2563eb;\n\t--color-primary-dark: #1d4ed8;\n\t--color-secondary: #06b6d4;\n\t--color-accent: #38bdf8;\n\n\t/* Header */\n\t--color-header: #0f172a;\n\t--color-header-subtext: #64748b;\n\n\t/* Card */\n\t--color-card-bg: rgba(255, 255, 255, 0.97);\n\t--color-card-border: #dbe5f1;\n\t--color-card-shadow: rgba(37, 99, 235, 0.10);\n\n\t/* Labels */\n\t--color-label: #334155;\n\n\t/* Inputs */\n\t--color-input-bg: #f8fafc;\n\t--color-input-border: #d7e1ee;\n\t--color-input-text: #1e293b;\n\t--color-placeholder: #94a3b8;\n\n\t/* Focus */\n\t--color-focus-border: #2563eb;\n\t--color-focus-shadow: rgba(37, 99, 235, 0.16);\n\n\t/* Submit */\n\t--color-submit-btn-bg: #2563eb;\n\t--color-submit-btn-hover: #1d4ed8;\n\t--color-submit-btn-text: #ffffff;\n\n\t/* Error */\n\t--color-error: #dc2626;\n\t--color-required: #ef4444;\n\n\t/* Links */\n\t--color-link: #2563eb;\n\t--color-html-link: #2563eb;\n\n\t/* Clear */\n\t--color-clear-button-bg: #64748b;\n\n\t/* HTML */\n\t--color-html-text: #334155;\n\n\n\t/* =========================================\n\t   GRADIENTS\n\t========================================= */\n\n\t--gradient-primary:\n\t\tlinear-gradient(\n\t\t\t135deg,\n\t\t\t#2563eb 0%,\n\t\t\t#06b6d4 100%\n\t\t);\n\n\t--gradient-header:\n\t\tlinear-gradient(\n\t\t\t135deg,\n\t\t\t#0f172a 0%,\n\t\t\t#1e3a8a 55%,\n\t\t\t#0369a1 100%\n\t\t);\n\n\t--gradient-button:\n\t\tlinear-gradient(\n\t\t\t135deg,\n\t\t\t#2563eb,\n\t\t\t#06b6d4\n\t\t);\n\n\n\t/* =========================================\n\t   BORDER RADII\n\t========================================= */\n\n\t--border-radius-card: 18px;\n\t--border-radius-input: 10px;\n\t--border-radius-button: 10px;\n\t--border-radius-clear-btn: 50%;\n\t--card-border-radius: 18px;\n\n\n\t/* =========================================\n\t   SPACING\n\t========================================= */\n\n\t--padding-container-top: 32px;\n\t--padding-card: 30px;\n\n\t--padding-test-notice-vertical: 12px;\n\t--padding-test-notice-horizontal: 18px;\n\n\t--margin-bottom-card: 20px;\n\n\t--padding-form-input: 13px;\n\n\t--card-padding: 30px;\n\t--card-margin-bottom: 20px;\n\n\n\t/* =========================================\n\t   DIMENSIONS\n\t========================================= */\n\n\t--container-width: 520px;\n\t--submit-btn-height: 50px;\n\t--checkbox-size: 18px;\n\n\n\t/* =========================================\n\t   SHADOWS\n\t========================================= */\n\n\t--box-shadow-card:\n\t\t0px 12px 35px rgba(15, 23, 42, 0.08);\n\n\t--box-shadow-input:\n\t\t0px 4px 14px rgba(37, 99, 235, 0.05);\n\n\t--box-shadow-button:\n\t\t0px 8px 20px rgba(37, 99, 235, 0.25);\n\n\n\t/* =========================================\n\t   OTHER\n\t========================================= */\n\n\t--opacity-placeholder: 0.6;\n\n\t--transition-fast: 0.2s ease;\n\t--transition-normal: 0.3s ease;\n}\n\n\n/* =========================================\n   BODY\n========================================= */\n\nbody {\n\tbackground:\n\t\tradial-gradient(\n\t\t\tcircle at top left,\n\t\t\trgba(37, 99, 235, 0.08),\n\t\t\ttransparent 35%\n\t\t),\n\t\tradial-gradient(\n\t\t\tcircle at bottom right,\n\t\t\trgba(6, 182, 212, 0.08),\n\t\t\ttransparent 35%\n\t\t),\n\t\tvar(--color-background);\n\n\tfont-family: var(--font-family);\n\n\tcolor: var(--color-html-text);\n}\n\n\n/* =========================================\n   FORM CARD\n========================================= */\n\n.card {\n\tbackground: var(--color-card-bg);\n\n\tborder: 1px solid var(--color-card-border);\n\n\tborder-radius: var(--border-radius-card);\n\n\tbox-shadow: var(--box-shadow-card);\n\n\tbackdrop-filter: blur(12px);\n\n\ttransition: var(--transition-normal);\n}\n\n.card:hover {\n\ttransform: translateY(-2px);\n\n\tbox-shadow:\n\t\t0px 18px 45px rgba(37, 99, 235, 0.12);\n}\n\n\n/* =========================================\n   HEADER\n========================================= */\n\nh1,\n.form-header {\n\tcolor: var(--color-header);\n\n\tfont-weight: var(--font-weight-bold);\n\n\tletter-spacing: -0.5px;\n}\n\n\n/* =========================================\n   SUBHEADER\n========================================= */\n\n.form-subheader {\n\tcolor: var(--color-header-subtext);\n\n\tline-height: 1.6;\n}\n\n\n/* =========================================\n   LABELS\n========================================= */\n\nlabel {\n\tcolor: var(--color-label);\n\n\tfont-weight: 600;\n\n\tmargin-bottom: 7px;\n}\n\n\n/* =========================================\n   INPUTS\n========================================= */\n\ninput,\ntextarea,\nselect {\n\twidth: 100%;\n\n\tbox-sizing: border-box;\n\n\tbackground: var(--color-input-bg);\n\n\tborder: 1px solid var(--color-input-border);\n\n\tborder-radius: var(--border-radius-input);\n\n\tcolor: var(--color-input-text);\n\n\tfont-size: var(--font-size-input);\n\n\tpadding: var(--padding-form-input);\n\n\ttransition: var(--transition-fast);\n\n\tbox-shadow: var(--box-shadow-input);\n}\n\n\n/* =========================================\n   INPUT FOCUS\n========================================= */\n\ninput:focus,\ntextarea:focus,\nselect:focus {\n\toutline: none;\n\n\tborder-color: var(--color-focus-border);\n\n\tbackground: #ffffff;\n\n\tbox-shadow:\n\t\t0 0 0 3px var(--color-focus-shadow);\n}\n\n\n/* =========================================\n   PLACEHOLDER\n========================================= */\n\ninput::placeholder,\ntextarea::placeholder {\n\tcolor: var(--color-placeholder);\n\n\topacity: var(--opacity-placeholder);\n}\n\n\n/* =========================================\n   TEXTAREA\n========================================= */\n\ntextarea {\n\tmin-height: 130px;\n\n\tresize: vertical;\n\n\tline-height: 1.6;\n}\n\n\n/* =========================================\n   SUBMIT BUTTON\n========================================= */\n\nbutton[type=\"submit\"] {\n\twidth: 100%;\n\n\theight: var(--submit-btn-height);\n\n\tborder: none;\n\n\tborder-radius: var(--border-radius-button);\n\n\tbackground: var(--gradient-button);\n\n\tcolor: var(--color-submit-btn-text);\n\n\tfont-size: 14px;\n\n\tfont-weight: 600;\n\n\tcursor: pointer;\n\n\tbox-shadow: var(--box-shadow-button);\n\n\ttransition: var(--transition-normal);\n}\n\nbutton[type=\"submit\"]:hover {\n\ttransform: translateY(-2px);\n\n\tbackground: var(--gradient-primary);\n\n\tbox-shadow:\n\t\t0px 12px 25px rgba(37, 99, 235, 0.30);\n}\n\nbutton[type=\"submit\"]:active {\n\ttransform: translateY(0);\n}\n\n\n/* =========================================\n   REQUIRED FIELD\n========================================= */\n\n.required {\n\tcolor: var(--color-required);\n}\n\n\n/* =========================================\n   ERROR\n========================================= */\n\n.error {\n\tcolor: var(--color-error);\n\n\tfont-size: var(--font-size-error);\n\n\tmargin-top: 5px;\n}\n\n\n/* =========================================\n   AI BADGE\n========================================= */\n\n.ai-badge {\n\tdisplay: inline-flex;\n\n\talign-items: center;\n\n\tgap: 6px;\n\n\tpadding: 6px 12px;\n\n\tborder-radius: 999px;\n\n\tbackground: rgba(37, 99, 235, 0.08);\n\n\tcolor: var(--color-primary);\n\n\tfont-size: 12px;\n\n\tfont-weight: 600;\n\n\tborder: 1px solid rgba(37, 99, 235, 0.15);\n}\n\n\n/* =========================================\n   LINKS\n========================================= */\n\na {\n\tcolor: var(--color-link);\n\n\tfont-weight: 600;\n\n\ttext-decoration: none;\n\n\ttransition: var(--transition-fast);\n}\n\na:hover {\n\tcolor: var(--color-primary-dark);\n}\n\n\n/* =========================================\n   CLEAR BUTTON\n========================================= */\n\nbutton.clear {\n\tbackground: var(--color-clear-button-bg);\n\n\tcolor: #ffffff;\n\n\tborder: none;\n\n\ttransition: var(--transition-fast);\n}\n\nbutton.clear:hover {\n\ttransform: scale(1.05);\n}\n\n\n/* =========================================\n   JZ PVT LTD FOOTER\n========================================= */\n\n.form-footer {\n\twidth: 100%;\n\n\ttext-align: center;\n\n\tmargin-top: 22px;\n\n\tpadding-top: 16px;\n\n\tborder-top: 1px solid #dbe5f1;\n\n\tcolor: #64748b;\n\n\tfont-size: 12px;\n\n\tline-height: 1.5;\n}\n\n.form-footer strong {\n\tcolor: #2563eb;\n\n\tfont-weight: 600;\n}\n\n.form-footer span {\n\topacity: 0.9;\n}\n\n\n/* =========================================\n   AI STATUS / PROCESSING\n========================================= */\n\n.ai-status {\n\tdisplay: flex;\n\n\talign-items: center;\n\n\tjustify-content: center;\n\n\tgap: 8px;\n\n\tmargin-top: 12px;\n\n\tfont-size: 12px;\n\n\tcolor: #64748b;\n}\n\n\n/* =========================================\n   RESPONSIVE\n========================================= */\n\n@media (max-width: 600px) {\n\n\t:root {\n\t\t--container-width: 94%;\n\t\t--padding-card: 22px;\n\t}\n\n\t.card {\n\t\tborder-radius: 14px;\n\t}\n\n\th1,\n\t.form-header {\n\t\tfont-size: 22px;\n\t}\n\n\tinput,\n\ttextarea,\n\tselect {\n\t\tfont-size: 14px;\n\t}\n\n\t.form-footer {\n\t\tmargin-top: 18px;\n\t}\n}"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.6,
+      "position": [
+        -384,
+        -32
+      ],
+      "id": "c371ea30-e84a-4c3f-a4f1-34da5478aeab",
+      "name": "FORM",
+      "webhookId": "c70a853d-2b60-4116-bb81-01c6a5647921"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Analyze this customer support ticket.\n\nCustomer Name:\n{{ $json.Name }}\nCustomer Email:\n{{ $json.Email }}\nSubject:\n{{ $json.Subject }}\nSupport Message:\n{{ $json.Problem }}\nReturn the result according to the system instructions.",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "You are an AI Customer Support Ticket Analyzer.\n\nYour job is to analyze customer support requests and generate a professional response.\n\nAnalyze the customer's request and determine:\n\n1. Ticket category\n2. Priority\n3. Customer sentiment\n4. Issue summary\n5. Suggested solution\n6. Professional customer reply\n7. Ticket status\n\nCATEGORY OPTIONS:\n\n- Payment Issue\n- Order Issue\n- Technical Issue\n- Account Issue\n- Delivery Issue\n- Refund Request\n- Product Issue\n- General Inquiry\n- Other\n\nPRIORITY OPTIONS:\n\n- Critical\n- High\n- Medium\n- Low\n\nSENTIMENT OPTIONS:\n\n- Positive\n- Neutral\n- Frustrated\n- Angry\n- Confused\n\nSTATUS OPTIONS:\n\n- Open\n- Pending\n- Resolved\n\nPRIORITY RULES:\nCritical = security issue, major financial problem, complete service failure, or severe business impact.\nHigh = important problem that requires quick attention.\nMedium = normal customer support issue.\nLow = minor issue or general question.\n\nBe professional, empathetic, concise and helpful.\n\nNever invent company policies, prices, refunds, guarantees or information that was not provided.\n\n\n"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -176,
+        -32
+      ],
+      "id": "5bc897c9-20b0-4619-967a-136d71ec04ea",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n\"ticket_category\": \"\",\n\"priority\": \"\",\n\"sentiment\": \"\",\n\"issue_summary\": \"\",\n\"suggested_solution\": \"\",\n\"customer_reply\": \"\",\n\"status\": \"\"\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        -16,
+        176
+      ],
+      "id": "ef5d68b1-494a-4331-8870-56707c5ea089",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-5-mini"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        -320,
+        176
+      ],
+      "id": "712d9baa-3a97-46f9-8a00-64edace012dc",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "ph9SGXZi4IPq4AJU",
+          "name": "n8n free OpenAI API credits"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "18jhjsrqOiBa9Eteh8eOJhE4CSJfZCiMhGTrQVAwu7Lc",
+          "mode": "list",
+          "cachedResultName": "30 DAYS -CHALLENGE",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/18jhjsrqOiBa9Eteh8eOJhE4CSJfZCiMhGTrQVAwu7Lc/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1086825756,
+          "mode": "list",
+          "cachedResultName": "DAY-3",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/18jhjsrqOiBa9Eteh8eOJhE4CSJfZCiMhGTrQVAwu7Lc/edit#gid=1086825756"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Ticket ID": "=TICKET-{{ $now }}",
+            "Full Name": "={{ $('FORM').item.json.Name }}",
+            "Email": "={{ $('FORM').item.json.Email }}",
+            "Subject": "={{ $('FORM').item.json.Subject }}",
+            "Support Message": "={{ $('FORM').item.json.Problem }}",
+            "Category": "={{ $json.output.ticket_category }}",
+            "Priority": "={{ $json.output.priority }}",
+            "Sentiment": "={{ $json.output.sentiment }}",
+            "Status": "={{ $json.output.status }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Ticket ID",
+              "displayName": "Ticket ID",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Full Name",
+              "displayName": "Full Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Subject",
+              "displayName": "Subject",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Support Message",
+              "displayName": "Support Message",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Category",
+              "displayName": "Category",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Priority",
+              "displayName": "Priority",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Sentiment",
+              "displayName": "Sentiment",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        176,
+        -32
+      ],
+      "id": "b9218c41-1bdc-4853-a14c-0aaf8f538ffc",
+      "name": "RECORD DATA",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "PJ7xpgsnyi0di1RR",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.Email }}",
+        "subject": "=Re:  {{ $json.Subject }}",
+        "message": "=<h2>Customer Support Response</h2> \n<p>Hello {{ $json['Full Name'] }} ,</p>  \n<p> {{ $('AI Agent').item.json.output.customer_reply }}</p>  \n<p>Best regards,\n<br> JZ Customer Support Team</p>",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        384,
+        -32
+      ],
+      "id": "ec574358-6b04-426d-a24f-0d96f9b9d459",
+      "name": "REPLY",
+      "webhookId": "fd62c9a5-9056-46b8-804a-83fabf0be811",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "zks4zsngEiR8n9Ci",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "FORM": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "RECORD DATA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RECORD DATA": {
+      "main": [
+        [
+          {
+            "node": "REPLY",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "13daa90d-9426-4b61-ba6a-b1c70460863b",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "33d8510a8f6c0705b24da1b4eb98d9cf10d7f638be14770e2af068c96a52da4a"
+  },
+  "nodeGroups": [],
+  "id": "m35DYqjui1Yr15wR",
+  "tags": []
+}
